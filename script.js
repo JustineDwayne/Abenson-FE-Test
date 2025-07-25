@@ -100,3 +100,20 @@ function renderBeds(beds) {
 }
 
 renderBeds(typesBeds); // Initial render with Types beds
+
+const typesButton = document.querySelector('.types-button');
+const firmnessButton = document.querySelector('.firmness-button');
+
+typesButton.addEventListener('click', () => {
+    typesButton.classList.add('active');
+    firmnessButton.classList.remove('active');
+    document.querySelector('.slider-background').style.left = '0.5rem'; // Slide to Types button
+    renderBeds(typesBeds);
+})
+
+firmnessButton.addEventListener('click', () => {
+    firmnessButton.classList.add('active');
+    typesButton.classList.remove('active');
+    document.querySelector('.slider-background').style.right = '0.5rem'; // Slide to Types button
+    renderBeds(firmnessBeds);
+})

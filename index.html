@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,15 +8,17 @@
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
 </head>
+
 <body>
 
     <section class="title-page">
         <h1 class="title">Choose your <strong class="gradient">next bed</strong></h1>
         <h2 class="subtitle">Better sleep begins with comfort that perfectly suits your rest style.</h2>
     </section>
-    
+
     <div class="buttons-container">
-        <button class="types-button" onclick="renderBeds(typesBeds)">Types</button>
+        <div class="slider-background"></div> <!-- Sliding indicator -->
+        <button class="types-button active" onclick="renderBeds(typesBeds)">Types</button>
         <button class="firmness-button" onclick="renderBeds(firmnessBeds)">Firmness</button>
     </div>
 
@@ -25,4 +28,5 @@
 
 
 </body>
+
 </html>

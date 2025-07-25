@@ -37,30 +37,51 @@ body {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-evenly;
-    justify-items: center;
+    justify-content: center; /* Center buttons */
+    left: 41%;
     margin-top: 20px;
     background: #97c4ca;
-    padding: 1rem;
-    border-radius: 4rem;
+    padding: 0.5rem; /* Reduced for tighter look */
+    border-radius: 2rem; /* Match button radius */
+    position: relative; /* For positioning slider-background */
+    width: 12.5rem; /* 2 * 6rem buttons + 0.5rem padding */
 }
 
-.types-button {
-    background-color: white;
-    border: none;
-    width: 6rem;
-    padding: 10px;
+.slider-background {
+    position: absolute;
+    top: 0.5rem;
+    left: 0.5rem; /* Default to Types button */
+    width: 6rem; /* Match button width */
+    height: calc(100% - 1rem); /* Match button height */
     border-radius: 1rem;
-    cursor: pointer;
+    transition: left 0.3s ease; /* Smooth slide */
+    z-index: 0; /* Behind buttons */
 }
 
+.types-button,
 .firmness-button {
-    background-color: white;
+    background-color: transparent; /* No background, handled by slider */
     border: none;
     width: 6rem;
     padding: 10px;
     border-radius: 1rem;
     cursor: pointer;
+    font-size: 1rem;
+    color: rgb(86, 84, 84); /* Match your text color */
+    position: relative; /* Stack above slider-background */
+    z-index: 1; /* Above slider-background */
+    transition: color 0.3s ease;
+}
+
+.types-button.active,
+.firmness-button.active {
+    color: #4e88f5; /* Gradient end color for active state */
+    font-weight: bold; /* Emphasize active button */
+    background: white; /* Match button background */
+}
+
+.firmness-button.active ~ .slider-background {
+    left: 6.5rem;
 }
 
 .cards-container {
