@@ -8,21 +8,19 @@ class Bed {
 
     render() {
         return `
-            <div class="bed-card">
+        <div class="bed-card">
             <div class="bed-image-container">
                 <img class="bed-image" src=${this.img} alt=${this.name} />
-                <div class="overlay">
-                    <span class="bed-description">${this.desc}</span>
-                    <span class="bed-tags">
-                        ${this.tags.map(tag => `<span class="tag">${tag}</span>`).join(' ')}
-                    </span>
-                </div>
             </div>
             <div class="bed-name">
                 <h1 class="name-text">${this.name}</h1>
+                <p class="bed-name-description">${this.desc}</p>
+                <span class="bed-name-tags">
+                    ${this.tags.map(tag => `<span class="tag">${tag}</span>`).join(' ')}
+                </span>
             </div>
-         </div>
-        `;
+        </div>
+    `;
     }
 }
 
@@ -31,16 +29,70 @@ class Bed {
 
 //Data for Types
 const typesBeds = [
-    new Bed("Single Bed", "assets/plush.png", "A comfortable single bed for one person.", ["Single", "Compact"]),
-    new Bed("Double Bed", "images/double-bed.jpg", "A spacious double bed for couples.", ["Double", "Spacious"]),
-    new Bed("Queen Bed", "images/queen-bed.jpg", "A luxurious queen bed for ultimate comfort.", ["Queen", "Luxury"]),
-    new Bed("King Bed", "images/king-bed.jpg", "An expansive king bed for those who love space.", ["King", "Spacious"]),
-    new Bed("Bunk Bed", "images/bunk-bed.jpg", "A fun bunk bed perfect for kids' rooms.", ["Bunk", "Kids"])
-]
+    new Bed(
+        "Trundle Bed",
+        "assets/plush.png",
+        "Space saving functionality. It slides under another bed - easy extra sleeping place.",
+        ["Single", "Compact"]
+    ),
+    new Bed(
+        "Foam Mattress",
+        "assets/plush.png",
+        "A cozy double bed with plush foam layers, designed for couples seeking a soft, supportive retreat.",
+        ["Double", "Spacious"]
+    ),
+    new Bed(
+        "Spring Mattress",
+        "assets/plush.png",
+        "A regal queen bed with responsive spring support, offering luxurious comfort for restful nights.",
+        ["Queen", "Luxury"]
+    ),
+    new Bed(
+        "Latex Foam",
+        "assets/plush.png",
+        "A grand king bed with natural latex foam, delivering expansive space and eco-friendly comfort.",
+        ["King", "Spacious"]
+    ),
+    new Bed(
+        "Foldable Foam",
+        "assets/plush.png",
+        "A vibrant bunk bed with foldable foam mattresses, ideal for kids’ rooms or shared spaces with a playful vibe.",
+        ["Bunk", "Kids"]
+    ),
+    new Bed(
+        "Memory Foam",
+        "assets/plush.png",
+        "A snug single bed with contouring memory foam, crafted for personalized comfort in compact settings.",
+        ["Single", "Compact"]
+    )
+];
 
 const firmnessBeds = [
-
-]
+    new Bed(
+        "Plush",
+        "assets/plush.png",
+        "A soft single bed with plush cushioning, offering a cloud-like sleep experience for ultimate relaxation.",
+        ["Single", "Compact"]
+    ),
+    new Bed(
+        "Medium Plush",
+        "assets/plush.png",
+        "A balanced double bed with medium plush comfort, perfect for couples who enjoy a softer yet supportive feel.",
+        ["Double", "Spacious"]
+    ),
+    new Bed(
+        "Firm",
+        "assets/plush.png",
+        "A sturdy queen bed with firm support, designed for sleepers who prefer a solid, stable surface.",
+        ["Queen", "Luxury"]
+    ),
+    new Bed(
+        "Medium Firm",
+        "assets/plush.png",
+        "A spacious king bed with medium-firm support, blending comfort and stability for a restful sleep.",
+        ["King", "Spacious"]
+    )
+];
 
 // Function to render product cards
 function renderBeds(beds) {
