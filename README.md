@@ -20,10 +20,10 @@ The cards are arranged in a responsive 3-column layout. The design is mobile-fri
 
 /abensontest
 │
-├── assets/              # Images and other static files
-├── style.css            # CSS file
-├── script.js            # JavaScript class and logic
-└── index.html           # HTML file
+├── assets/ # Images and other static files
+├── style.css # CSS file
+├── script.js # JavaScript class and logic
+└── index.html # HTML file
 
 ---
 
