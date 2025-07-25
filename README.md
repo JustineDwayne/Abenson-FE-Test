@@ -17,13 +17,13 @@ The cards are arranged in a responsive 3-column layout. The design is mobile-fri
 ---
 
 ## 🧩 Project Structure
+/Abenson-FE-Test
+-assets/     # Images and other assets needed
+-index.html  # HTML file
+-script.js   # JavaScript class and logic
+-style.css   # CSS file
 
-/abensontest
-│
-├── assets/ # Images and other static files
-├── style.css # CSS file
-├── script.js # JavaScript class and logic
-└── index.html # HTML file
+
 
 ---
 
@@ -32,6 +32,6 @@ The cards are arranged in a responsive 3-column layout. The design is mobile-fri
 1. **Clone the repository:**
 
 ```bash
-git clone (https://github.com/JustineDwayne/Abenson-FE-Test)
+git clone https://github.com/JustineDwayne/Abenson-FE-Test
 cd Abenson-FE-Test
 
