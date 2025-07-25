@@ -1,0 +1,64 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fffbfb;
+}
+
+.title-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.title{
+    color: rgb(73, 73, 73);
+    font-size: 2rem;
+    margin-bottom: 0;
+}
+
+.gradient {
+    background: #5CC7CF;
+    background: linear-gradient(to right, #5CC7CF 0%, #000ECF 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.subtitle {
+    color: rgb(73, 73, 73);
+    font-size: 1.5rem;
+    margin-top: 0;
+    font-weight: 300;
+}
+
+.buttons-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    justify-items: center;
+    margin-top: 20px;
+    background: #97c4ca;
+    padding: 1rem;
+    border-radius: 4rem;
+}
+
+.types-button{
+    background-color: white;
+    border: none;
+    width: 6rem;
+    padding: 10px;
+    border-radius: 1rem;
+    cursor: pointer;
+}
+
+.firmness-button{
+    background-color: white;
+    border: none;
+    width: 6rem;
+    padding: 10px;
+    border-radius: 1rem;
+    cursor: pointer;
+}
