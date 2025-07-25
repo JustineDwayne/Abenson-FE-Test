@@ -38,7 +38,7 @@ const typesBeds = [
     new Bed(
         "Foam Mattress",
         "assets/plush.png",
-        "A cozy double bed with plush foam layers, designed for couples seeking a soft, supportive retreat.",
+        "A cozy double bed with plush foam layers, designed for couples.",
         ["Double", "Spacious"]
     ),
     new Bed(
@@ -50,19 +50,19 @@ const typesBeds = [
     new Bed(
         "Latex Foam",
         "assets/plush.png",
-        "A grand king bed with natural latex foam, delivering expansive space and eco-friendly comfort.",
+        "A grand king bed with natural latex foam, delivering expansive space.",
         ["King", "Spacious"]
     ),
     new Bed(
         "Foldable Foam",
         "assets/plush.png",
-        "A vibrant bunk bed with foldable foam mattresses, ideal for kids’ rooms or shared spaces with a playful vibe.",
+        "A vibrant bunk bed with foldable foam mattresses, ideal for kids’ rooms or shared spaces.",
         ["Bunk", "Kids"]
     ),
     new Bed(
         "Memory Foam",
         "assets/plush.png",
-        "A snug single bed with contouring memory foam, crafted for personalized comfort in compact settings.",
+        "A snug single bed with contouring memory foam, crafted for personalized comfort.",
         ["Single", "Compact"]
     )
 ];
@@ -77,7 +77,7 @@ const firmnessBeds = [
     new Bed(
         "Medium Plush",
         "assets/plush.png",
-        "A balanced double bed with medium plush comfort, perfect for couples who enjoy a softer yet supportive feel.",
+        "A balanced double bed with medium plush comfort, perfect for couples.",
         ["Double", "Spacious"]
     ),
     new Bed(
