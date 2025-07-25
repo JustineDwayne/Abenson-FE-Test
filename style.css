@@ -145,10 +145,11 @@ body {
 }
 
 .tag {
-    background-color: #4CAF50;
-    color: white;
+    background-color: white;
+    color: gray;
     padding: 4px 8px;
     border-radius: 12px;
+    border: gray 1px solid;
     font-size: 12px;
 }
 
